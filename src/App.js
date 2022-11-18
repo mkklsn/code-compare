@@ -1,5 +1,5 @@
 import React from "react";
-import Block from "./Block.js";
+import BlockGroup from "./BlockGroup.js";
 
 function App() {
   let csForLoop =
@@ -9,9 +9,35 @@ function App() {
     'if (x == 1) {\n   Console.WriteLine("x is 1");\n}\nelse if (x == 2) {\n   Console.WriteLine("x is 2");\n}\nelse {\n   Console.WriteLine("x not 1");\n}';
 
   return (
-    <div>
-      <Block title={"For Loop"} code={csForLoop} />
-      <Block title={"If Else"} code={csIfElse} />
+    <div className="main">
+      <BlockGroup
+        title={"C#"}
+        forloop_title={"For Loop"}
+        forloop_code={csForLoop}
+        ifelse_title={"If Else"}
+        ifelse_code={csIfElse}
+      />
+      <BlockGroup
+        title={"Go"}
+        forloop_title={"For Loop"}
+        forloop_code={csForLoop}
+        ifelse_title={"If Else"}
+        ifelse_code={csIfElse}
+      />
+      <BlockGroup
+        title={"JavaScript"}
+        forloop_title={"For Loop"}
+        forloop_code={csForLoop}
+        ifelse_title={"If Else"}
+        ifelse_code={csIfElse}
+      />
+      <BlockGroup
+        title={"Java"}
+        forloop_title={"For Loop"}
+        forloop_code={csForLoop}
+        ifelse_title={"If Else"}
+        ifelse_code={csIfElse}
+      />
     </div>
   );
 }
