@@ -5,3 +5,9 @@
     max-width: 480px;
     margin: 0 16px;
 }
+
+.block-group > .title {
+    color: #c2c2c2;
+    font-size: x-large;
+    margin-bottom: 15px;
+}

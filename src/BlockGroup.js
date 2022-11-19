@@ -3,11 +3,14 @@ import Block from "./Block.js";
 import "./BlockGroup.css";
 
 function BlockGroup(props) {
+  let blocks = props.blocks.map((b) => {
+    return <Block title={b.title} code={b.code} />;
+  });
+
   return (
     <div className="block-group">
-      <h3>{props.title}</h3>
-      <Block title={props.forloop_title} code={props.forloop_code} />
-      <Block title={props.ifelse_title} code={props.ifelse_code} />
+      <span className="title">{props.title}</span>
+      {blocks}
     </div>
   );
 }

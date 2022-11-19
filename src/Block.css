@@ -2,3 +2,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.block .title {
+    color: #c2c2c2;
+    font-size: medium;
+}

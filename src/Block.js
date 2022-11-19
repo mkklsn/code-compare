@@ -5,8 +5,8 @@ import "./Block.css";
 
 function Block(props) {
   return (
-    <div>
-      <label>{props.title}</label>
+    <div className="block">
+      <span className="title">{props.title}</span>
       <SyntaxHighlighter
         language="csharp"
         style={atomOneDark}
